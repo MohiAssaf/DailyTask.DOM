@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10d71efed4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Daily Tracker</title>
+</head>
+<body>
+
+    <section class="task">
+
+        <div class="setTask">
+            <h2 class="addTask">Add Task</h2>
+
+            <form>
+
+                
+                <label for="">Task</label>
+
+                <div>
+                    <input type="text" placeholder="Enter a task for the day" id="taskName">
+                </div>
+
+                <label for="">Location</label>
+
+                <div>
+                    <input type="text" placeholder="Enter location of the task" id="locationName">
+                </div>
+
+                <label for="">Time Needed</label>
+                
+                <div id="time">
+                <input type="time" value="00:00" id="timeNeeded">
+                </div>
+
+                <label for="">Reminders</label>
+
+                <div>
+                    <textarea id="message" placeholder="Enter any reminders you need"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button id="add" type="submit">Add Task</button>
+                    <button type="submit" id="reset">Reset Fields</button>
+                </div>
+            </form>
+
+        </div>            
+        
+        <div class="listTasks">
+            <h2 class="list">Tasks for the day</h2>
+            <ul id="task">
+
+                
+            </ul>
+        </div>
+
+        <article>
+
+
+            <div class="completedTasks">
+                <h2 class="completed">Completed Tasks</h2>
+                <ul id="completed-tasks">
+
+                </ul>
+            </div>
+
+            <div class="uncompletedTasks">
+                <h2 class="uncompleted">Uncompleted Tasks</h2>
+                <ul id="uncompleted-tasks">
+
+                </ul>
+            </div>
+        </article>
+
+
+    </section>
+    <script src="./application.js"></script>
+</body>
+</html>

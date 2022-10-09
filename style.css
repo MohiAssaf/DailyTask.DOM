@@ -1,0 +1,191 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./background/background-2.png);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h2{
+    font-size: 30px;
+    color: #2134FFFF;
+    margin-bottom: 20px;
+}
+
+.task {
+    position: absolute;
+    width: 420px;
+    display: flex;
+    margin-left: 60px;
+}
+
+.setTask {
+    position: relative;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    background-color: white 100%;
+    width: 420px;
+    border-radius: 20px;
+    padding: 10px 50px 50px 50px;
+    margin: auto;
+}
+
+form {
+    font-size: 24px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    padding-left: 35px;
+    border-radius: 10px;
+    color: black;
+    margin: 15px 15px 30px 15px;
+}
+
+i{
+    position: relative;
+    left: 50px;
+    top: 4px;
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+textarea {
+    margin:  10px 10px 0 2px;
+    border-radius: 8px;
+    width: 250px;
+    height: 100px;
+    resize: none;
+}
+.list, .completed, .uncompleted{
+    display: inline;
+    margin: -100px;
+}
+label {
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+
+button{
+    margin-top: 40px;
+    border: 5em;
+    cursor: pointer;
+    padding: 0.7em 2em;
+    outline: none;
+    background-image: linear-gradient(-50deg, #41A0F2FF, #E2ED40FF);
+    border-radius: 5em;
+    color: rgb(0, 99, 105);
+
+}
+
+button:hover {
+    background-image: linear-gradient(-40deg, #E2ED40FF, #41A0F2FF);
+ 
+}
+
+
+.listTasks {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+    width: 350px;
+    height: 500px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: 50px;
+    overflow-y: scroll;
+    padding: 10px 100px 100px 100px;
+}
+
+.listTasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.completedTasks, .uncompletedTasks{
+    display: table;
+    text-align: center;
+    color: white;
+    background-color: lightblue;
+    padding:0 10px 0 10px;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 70px;
+    
+}
+
+
+#task {
+    padding-left: 0px;
+    display: block;
+}
+
+#task > li {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(245, 245, 245, 0.575);
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px 0px 0px;
+    border-radius: 20px;
+}
+
+.completed-tasks {
+    padding-left: 0px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.completed-tasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.completed-tasks > li{ 
+    display: block;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    font-size: 16px;
+    list-style-type: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+
+.uncompleted-tasks {
+    padding-left: 0px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.uncompleted-tasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.uncompleted-tasks > li {
+    display: inline-block;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    font-size: 16px;
+    list-style-type: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+
+
