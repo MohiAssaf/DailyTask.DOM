@@ -27,6 +27,32 @@ function dailyTask() {
         let time = inputs.time.value;
         let reminders = inputs.reminders.value;
 
+        inputs.task.value = ''
+        inputs.location.value = ''
+        inputs.time.value = ''
+        inputs.reminders.value = '' /// after adding the task clear all fields
+
+        
+        if(task == '' || location == '' || time == '' || reminders == ''){
+            return; /// if any of the fields is empty the program won't do anything
+        }
+
+        let li = document.createElement('li');
+        let h3 = document.createElement('h3');
+
+        /// innerHtml is not a good practice Ik :)
+        li.innerHTML = `
+        <h3>Task: <span>${task}</span></h3>
+        <h4>Location: <span>${location}</span></h4>    
+        <p class="timeN">Until: <span>${time}</span></p>
+        <p class="reminders">Reminders: <span>${reminders}</span></p>
+        <div id="list-action">
+            <button type="submit" id="finished">Fininshed</button>
+            <button type="submit" id="unfinished">Unfininshed</button>
+        </div>`
+
+        forms.taskList.appendChild(li)
+
     }
 
     function resetFields(e){
@@ -35,7 +61,8 @@ function dailyTask() {
         inputs.task.value = ''
         inputs.location.value = ''
         inputs.time.value = ''
-        inputs.reminders.value = ''
+        inputs.reminders.value = '' /// reseting all fields button
+
     }
 }
 
