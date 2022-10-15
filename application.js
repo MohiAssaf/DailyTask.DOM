@@ -38,7 +38,6 @@ function dailyTask() {
         }
 
         let li = document.createElement('li');
-        let h3 = document.createElement('h3');
 
         /// innerHtml is not a good practice Ik :)
         li.innerHTML = `
