@@ -52,6 +52,49 @@ function dailyTask() {
 
         forms.taskList.appendChild(li)
 
+        li.querySelector('#finished').addEventListener('click', finishedTasks)
+        li.querySelector('#unfinished').addEventListener('click', unfinishedTasks)
+
+
+        function finishedTasks(e){
+            e.preventDefault();
+
+            li.remove()
+            let li2 = document.createElement('li')
+
+            li2.innerHTML = 
+            `
+            <h2>Completed Task : <span>${task}</span></h2>
+            <p class="time">Time spent: ${time} - ${new Date().toLocaleTimeString()}</p>
+            <div class="btn">
+                <button type="submit" class="delete">Delete</button>
+            </div>
+            `
+
+
+            forms.completedList.appendChild(li2)
+            li2.querySelectorAll('button')[0].addEventListener('click', () => {
+                li2.remove()
+            })
+
+        }
+
+        function unfinishedTasks(e){
+            e.preventDefault();
+
+            
+            li.remove()
+
+            let li3 = document.createElement('li')
+
+            li.innerHTML = 
+            `            
+            <h2>Uncompleted Task : <span>${task}</span></h2>
+            <p class="time">Time spent: ${time} - ${new Date().toLocaleTimeString()}</p>`
+        }
+
+
+
     }
 
     function resetFields(e){
