@@ -255,14 +255,19 @@ button:hover {
 
 /*uncompleted tasks list*/
 
-.uncompleted-tasks {
+#uncompleted-tasks {
     padding-left: 0px;
     max-height: 250px;
     overflow-y: scroll;
 }
 
+#uncompleted-tasks {
+    margin: 0;
+    padding: 0;
+}
+
 #uncompleted-tasks::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 #uncompleted-tasks > li {
@@ -278,4 +283,12 @@ button:hover {
     background-color: rgba(245, 245, 245, 0.575);
 }
 
+#uncompleted-tasks > li > h2 span {
+    font-size: 18px;
+    color: #008B6C;
+}
 
+#uncompleted-tasks > li > h2 {
+    font-size: 22px;
+    color: black;
+}

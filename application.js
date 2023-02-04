@@ -87,10 +87,12 @@ function dailyTask() {
 
             let li3 = document.createElement('li')
 
-            li.innerHTML = 
+            li3.innerHTML = 
             `            
-            <h2>Uncompleted Task : <span>${task}</span></h2>
-            <p class="time">Time spent: ${time} - ${new Date().toLocaleTimeString()}</p>`
+            <h2>Task : <span>${task}</span></h2>
+            <p class="time">Time set: ${new Date().toLocaleTimeString()}</p>`
+
+            forms.uncompletedList.appendChild(li3)
         }
 
 
